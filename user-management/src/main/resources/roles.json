@@ -1,0 +1,192 @@
+{
+    "roles" :
+        [
+
+
+            {
+                "roleName" : "NPP.ARSS",
+                "description": "Анализ работы сортировочных станций"
+            },
+            {
+                "roleName" : "NPP.CUTR",
+                "description": "Ввод плановых показателей использования локомотивов грузовых серий"
+            },
+            {
+                "roleName" : "NPP.DO10VC",
+                "description": "ДО-10ВЦ"
+            },
+            {
+                "roleName" : "NPP.DO9VC",
+                "description": "ДО-9ВЦ"
+            },
+            {
+                "roleName" : "NPP.EGS",
+                "description": "Ввод нормативов содержания электровозов по группам серий (Отчет ТО-32ВЦ)"
+            },
+            {
+                "roleName" : "NPP.FLS.CD",
+                "description": "Ввод нормативов содержания тепловозов маневровых серий"
+            },
+            {
+                "roleName" : "NPP.FLS.CT",
+                "description": "Ввод нормативов содержания тепловозов маневровых серий"
+            },
+            {
+                "roleName" : "NPP.FLS.CTE",
+                "description": "Ввод нормативов содержания тепловозов маневровых серий"
+            },
+            {
+                "roleName" : "NPP.FLS.CTR",
+                "description": "Ввод нормативов содержания тепловозов маневровых серий"
+            },
+            {
+                "roleName" : "NPP.MDP",
+                "description": "Ввод нормативов минимального ресурса локомотивов от ТО-2 по полигонной технологии"
+            },
+            {
+                "roleName" : "NPP.MGSP",
+                "description": "Ввод нормативов оборота и баланса локомотивов по межгосударственным стыковым пунктам (МГСП)"
+            },
+            {
+                "roleName" : "NPP.MRS",
+                "description": "Мониторинг работы станций"
+            },
+            {
+                "roleName" : "NPP.MRS.D",
+                "description": "Мониторинг работы станций"
+            },
+            {
+                "roleName" : "NPP.MRS.S",
+                "description": "Мониторинг работы станций"
+            },
+            {
+                "roleName" : "NPP.MVPS",
+                "description": "Ввод плановых показателей РП по электропоездам, дизель-поездам, дизель-электропоездам,  автомотрисам, рельсовым автобусам по депо"
+            },
+            {
+                "roleName" : "NPP.NTKP",
+                "description": "Ввод номеров транзитных контейнерных поездов"
+            },
+            {
+                "roleName" : "NPP.NVD.Prosmotr",
+                "description": "Ввод норм веса и длины для отчета ДО-42ВЦ"
+            },
+            {
+                "roleName" : "NPP.NVD.Soglas",
+                "description": "Ввод норм веса и длины для отчета ДО-42ВЦ"
+            },
+            {
+                "roleName" : "NPP.NVD.Vvod",
+                "description": "Ввод норм веса и длины для отчета ДО-42ВЦ"
+            },
+            {
+                "roleName" : "NPP.NVZD",
+                "description": "Ввод норм времени заключительных действий при окончании работы локомотивных бригад"
+            },
+            {
+                "roleName" : "NPP.OSU",
+                "description": "Ввод данных по узловым станциям задачи учета работы и простоя в ЭП локомотивов грузового движения"
+            },
+            {
+                "roleName" : "NPP.PRLOC",
+                "description": "Ввод плановых качественных и количественных показателей"
+            },
+            {
+                "roleName" : "NPP.RDP",
+                "description": "Целевые значения параметров выполнения расписания движения пассажирских и пригородных поездов"
+            },
+            {
+                "roleName" : "NPP.SZF",
+                "description": "Ввод данных для системы запретных функций"
+            },
+            {
+                "roleName" : "NPP.TO33VC",
+                "description": "ТО-33ВЦ"
+            },
+            {
+                "roleName" : "NPP.TO35VC",
+                "description": "ТО-35ВЦ"
+            },
+            {
+                "roleName" : "NPP.TO36VC",
+                "description": "ТО-36ВЦ"
+            },
+            {
+                "roleName" : "NPP.VIPG",
+                "description": "Настройка контроля вагонов инвентарного парка принадлежности других государств"
+            },
+            {
+                "roleName":"NPP.VPP",
+                "description":"Ввод плановых показателей работы станций"
+            },
+            {
+                "roleName":"NPP.VPPR",
+                "description":"Ввод плановых показателей работы станций (расширенный)"
+            },
+            {
+                "roleName" : "NPP.DOR.01",
+                "description": "Окт Дорога (01)"
+            },
+            {
+                "roleName" : "NPP.DOR.10",
+                "description": "Калининград Дорога (10)"
+            },
+            {
+                "roleName" : "NPP.DOR.17",
+                "description": "Московска Дорога (17)"
+            },
+            {
+                "roleName" : "NPP.DOR.24",
+                "description": "Горьковская Дорога (24)"
+            },
+            {
+                "roleName" : "NPP.DOR.28",
+                "description": "Северная Дорога (28)"
+            },
+            {
+                "roleName" : "NPP.DOR.51",
+                "description": "Дорога (51)"
+            },
+            {
+                "roleName" : "NPP.DOR.58",
+                "description": "Дорога (58)"
+            },
+            {
+                "roleName" : "NPP.DOR.61",
+                "description": "Дорога (61)"
+            },
+            {
+                "roleName" : "NPP.DOR.63",
+                "description": "Дорога (63)"
+            },
+            {
+                "roleName" : "NPP.DOR.76",
+                "description": "Дорога (76)"
+            },
+            {
+                "roleName" : "NPP.DOR.80",
+                "description": "Дорога (80)"
+            },
+            {
+                "roleName" : "NPP.DOR.83",
+                "description": "Дорога (83)"
+            },
+            {
+                "roleName" : "NPP.DOR.88",
+                "description": "Дорога (88)"
+            },
+            {
+                "roleName" : "NPP.DOR.92",
+                "description": "Дорога (92)"
+            },
+            {
+                "roleName" : "NPP.DOR.94",
+                "description": "Дорога (94)"
+            },
+            {
+                "roleName" : "NPP.DOR.96",
+                "description": "Дорога (96)"
+            }
+
+        ]
+}
