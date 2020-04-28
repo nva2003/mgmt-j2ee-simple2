@@ -1,0 +1,102 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	      version="3.0">
+
+
+    <context-param>
+        <description>version of project-name</description>
+        <param-name>version</param-name>
+        <param-value>1.0</param-value>
+    </context-param>
+
+
+
+    <listener>
+        <listener-class>rzd.pktbcki.bf.oppstl.listeners.ContextLogger</listener-class>
+    </listener>
+
+
+    <listener>
+        <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>rzd.pktbctt.shiro.web.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>rzd.pktbctt.shiro.web.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NeedChangePasswordServlet</servlet-name>
+        <servlet-class>rzd.pktbctt.shiro.web.servlet.NeedChangePasswordServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PasswordResetServlet</servlet-name>
+        <servlet-class>rzd.pktbctt.shiro.web.servlet.PasswordResetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NeedChangePasswordServlet</servlet-name>
+        <url-pattern>/needchangepassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PasswordResetServlet</servlet-name>
+        <url-pattern>/forgetpassword</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>120</session-timeout>
+        <!-- Disables URL-based sessions (no more 'jsessionid' in the URL using Tomcat) -->
+        <!--<tracking-mode>COOKIE</tracking-mode>-->
+    </session-config>
+
+
+
+
+    <filter>
+        <filter-name>ShiroFilter</filter-name>
+        <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ShiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+        <dispatcher>ERROR</dispatcher>
+    </filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>/signin</welcome-file>
+    </welcome-file-list>
+
+
+    <resource-ref>
+        <res-ref-name>
+            jdbc/project-name/userManagement
+        </res-ref-name>
+        <res-type>
+            javax.sql.DataSource
+        </res-type>
+        <res-auth>
+            Container
+        </res-auth>
+    </resource-ref>
+
+
+
+
+
+</web-app>

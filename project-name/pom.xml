@@ -16,7 +16,43 @@
   <name>enterprise java beans</name>
 
   <dependencies>
+    <!-- Shiro dependencies: -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-web</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-spring -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-ehcache</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
 
+
+    <dependency>
+      <groupId>rzd.pktbcki</groupId>
+      <artifactId>user-managment-shiro-web</artifactId>
+      <version>${user-managment-shiro-web.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>rzd.pktbcki</groupId>
+      <artifactId>user-managment-shiro-web-templates</artifactId>
+      <version>${user-managment-shiro-web-templates.version}</version>
+      <type>war</type>
+      <scope>runtime</scope>
+    </dependency>
   </dependencies>
 
   <build>
