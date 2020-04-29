@@ -34,6 +34,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <outDir>C:\MyProjects\Applications</outDir>
 
+    <javax.mail>1.6.2</javax.mail>
     <user-management.version>2.0</user-management.version>
     <shiro.version>1.4.0</shiro.version>
 <!--    <user-managment-ws-client.version>1.2</user-managment-ws-client.version>-->
@@ -45,6 +46,28 @@
 
   <dependencyManagement>
     <dependencies>
+
+      <dependency>
+        <groupId>rzd.pktbcki</groupId>
+        <artifactId>auditsystem-user-management</artifactId>
+        <version>${user-management.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>rzd.pktbcki</groupId>
+        <artifactId>user-managment-shiro-web</artifactId>
+        <version>${user-managment-shiro-web.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>rzd.pktbcki</groupId>
+        <artifactId>user-managment-shiro-web-templates</artifactId>
+        <version>${user-managment-shiro-web-templates.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>${javax.mail}</version>
+        <scope>provided</scope>
+      </dependency>
 
       <dependency>
         <groupId>rzd.pktbcdt.maven.archetypes</groupId>

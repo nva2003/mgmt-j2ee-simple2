@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -13,7 +13,15 @@
   <artifactId>project-name</artifactId>
   <packaging>war</packaging>
 
-  <name>enterprise java beans</name>
+  <name>project-name</name>
+
+  <repositories>
+    <repository>
+      <id>um-repo</id>
+      <name>userManagment repo</name>
+      <url>http://10.240.2.45:9999/nexus/content/repositories/userManagment</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <!-- Shiro dependencies: -->
@@ -27,23 +35,10 @@
       <artifactId>shiro-web</artifactId>
       <version>${shiro.version}</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-spring -->
-    <dependency>
-      <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-spring</artifactId>
-      <version>${shiro.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-ehcache</artifactId>
-      <version>${shiro.version}</version>
-    </dependency>
-
 
     <dependency>
       <groupId>rzd.pktbcki</groupId>
       <artifactId>user-managment-shiro-web</artifactId>
-      <version>${user-managment-shiro-web.version}</version>
     </dependency>
 
     <dependency>
