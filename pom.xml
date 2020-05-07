@@ -114,7 +114,9 @@
         </plugin>
         <plugin>
           <artifactId>maven-ear-plugin</artifactId>
-          <version>3.0.1</version>
+          <configuration>
+            <modules/>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-ejb-plugin</artifactId>
